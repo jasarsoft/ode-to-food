@@ -9,4 +9,9 @@
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\OdeToFood.Core\OdeToFood.Core.csproj" />
+    <ProjectReference Include="..\OdeToFood.Data\OdeToFood.Data.csproj" />
+  </ItemGroup>
+
 </Project>
