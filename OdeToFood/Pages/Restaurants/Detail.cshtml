@@ -14,3 +14,8 @@
 <div>
     Cuisine: @Model.Restaurant.Cuisine
 </div>
+
+@if (Model.Message != null)
+{
+    <div class="alert alert-info">@Model.Message</div>
+}
