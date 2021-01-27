@@ -43,6 +43,7 @@ namespace OdeToFood.Pages.Restaurants
             {
                 Restaurant = _restaurantData.Update(Restaurant);
                 _restaurantData.Commit();
+                return RedirectToPage("./Detail", new {restaurantId = Restaurant.Id});
             }
             Cuisines = _htmlHelper.GetEnumSelectList<CuisineType>();
             
