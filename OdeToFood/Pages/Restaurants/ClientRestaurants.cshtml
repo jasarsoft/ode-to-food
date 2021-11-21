@@ -7,11 +7,19 @@
 
 @section Scripts
 {
+    <environment include="Development">
+    </environment>
+
+    <environment exclude="Development">
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs/dt-1.11.3/datatables.min.css" />
+        <script type="text/javascript" src="https://cdn.datatables.net/v/bs/dt-1.11.3/datatables.min.js"></script>
+    </environment>
+
     <script>
-        $(function() {
+        $(function () {
             $.ajax("/api/restaurants/",
-                    { method: "get" })
-                .then(function(response) {
+                { method: "get" })
+                .then(function (response) {
                     console.dir(response);
                 });
         })
